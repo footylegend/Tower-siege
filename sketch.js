@@ -74,7 +74,7 @@ function setup() {
 
 }
 async function FindOutTime(){
-  var response = await fetch("http://worldtimeapi.org/api/timezone/Asia/Kolkata");
+  var response = await fetch("https://worldtimeapi.org/api/timezone/Asia/Kolkata");
   var responseJSON = await response.json();
   var hours = responseJSON.datetime.slice(11,13);
   console.log(hours)
